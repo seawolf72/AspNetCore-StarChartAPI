@@ -60,7 +60,7 @@ namespace StarChart.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create([FromBody]CelestialObject celestialObject)
+        public IActionResult Create([FromBody]CelestialObject celestialObject)
         {
             _context.CelestialObjects.Add(celestialObject);
             _context.SaveChanges();
